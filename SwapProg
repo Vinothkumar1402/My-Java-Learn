@@ -1,0 +1,33 @@
+
+public class swap {
+	//initialize variable with value
+	int		a=10,
+			b=20;
+	public void sop() {
+		//print initialize value in console
+	
+	System.out.println(a+"  "+b);
+	}
+	public void swapByC() {
+		//swap with additional variable
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println(a+"  "+b);
+	}
+	public void swap1() {
+		//swap without initialize new variable
+		a=a+b;  //30
+		a=a-b;  //10
+		b=a-b;   //20
+		System.out.println(a+"  "+b);
+	}
+	public static void main(String[] args) {
+		swap s = new swap();
+		s.sop();
+		s.swapByC();
+		s.swap1();
+	}
+
+}
