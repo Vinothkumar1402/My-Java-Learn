@@ -1,0 +1,32 @@
+
+public class BasicPrograms {
+	int a=1,b=2,c=3,d; 
+	
+	public void add() {
+		d=a+b;
+		System.out.println(d);
+		}
+	public void multiply() {
+		int mull = c*d;
+		System.out.println(mull);
+	}
+	
+	public void divide() {
+		int c = 6;
+		int div = c/b ;
+		 int mod = c%d;
+		System.out.println(div+"   "+mod );
+	}
+	
+	
+	public static void main(String[] args){
+		BasicPrograms bp = new BasicPrograms();
+		bp.add();
+		bp.divide();
+		bp.multiply();
+		
+	}
+	
+	
+
+}
