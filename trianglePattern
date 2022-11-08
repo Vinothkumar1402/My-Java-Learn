@@ -1,0 +1,26 @@
+package interviewProg;
+
+public class triAnglePattern {
+	public static void main(String[] args) {
+		int noOfRow=6;
+		int row,column=0;
+		for(row=1;row<=noOfRow;row++){
+			for(column=1;column<=row;column++){
+				System.out.print("* ");
+				
+			}
+			System.out.println();
+		}
+	}
+	
+
+}
+
+
+output:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
