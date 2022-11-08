@@ -1,0 +1,30 @@
+package interviewProg;
+
+public class ReverseAString {
+	static String given="HTONIV" ;
+	
+	public void byBuffer() {
+	StringBuffer buffer = new StringBuffer();
+	StringBuffer append = buffer.append(given);
+	System.out.println(append.reverse() );
+	}   
+	
+	public void byForloop() {
+	String rev="";   //create a empty string to store the rev string 
+	char[] charArray = given.toCharArray(); //toCharArray method is store the each char in array 
+	for(int i=charArray.length-1; i>=0; i--){
+		rev=rev+charArray[i];
+		
+	}
+	System.out.println(rev);
+
+	}
+	
+	
+	public static void main(String[] args) {
+		 ReverseAString ra = new ReverseAString();
+		 ra.byBuffer();
+		 ra.byForloop();
+	}
+
+}
