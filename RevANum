@@ -1,0 +1,29 @@
+package interviewProg;
+
+public class RevANum {
+	public static void main(String[] args) {
+			int given = 12,rev=0;
+			while(given!=0){
+				rev=rev*10;
+				rev=rev+given%10;
+				given=given/10;
+						
+			}
+			System.out.println(rev);
+	
+}
+}
+
+//how?
+/*given=12,rev=0
+entering into loop(12 notequal to 0)
+rev=0*10=0
+rev=0+(12%10=2)=2
+given=12/10=1
+
+given=1 entering into loop(1 notequal to 0)
+rev = 2*0=20
+rev=20+1=21
+given=1/10=0
+exit loop
+*/
