@@ -1,0 +1,30 @@
+package interviewProg;
+
+public class LengthOfString {
+	String given = "as ";
+	public void byMethod() {
+		int length = given.length();
+		System.out.println(length);
+		
+	}
+
+	public void byFor() {
+		int length=0;
+		char[] charArray = given.toCharArray();
+		for(char c : charArray ){
+			length++ ;
+			
+		
+			
+		}
+		System.out.println(length);
+		
+		
+			}
+	public static void main(String[] args) {
+		LengthOfString ll = new LengthOfString();
+		ll.byFor();
+		ll.byMethod();
+	}
+
+}
