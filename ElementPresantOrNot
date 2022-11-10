@@ -1,11 +1,17 @@
 package interviewProg;
 
+import java.util.Scanner;
+
 public class ElementPresantOrNot {
+	
 	public static void main(String[] args) {
 		
 	
-	int[] given={1,2,3,4,5,5,6};
-	int toFind= 5;
+	int[] given={0,1,10,2,3,4,5,5,6};
+	System.out.println("enter the number to find" );
+	Scanner scanner= new Scanner(System.in);
+	int toFind = scanner.nextInt();
+	
 	boolean found = false;
 	for (int i : given) {
 		if (toFind==i) {
