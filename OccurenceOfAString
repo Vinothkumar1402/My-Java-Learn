@@ -1,0 +1,52 @@
+package interviewProg;
+
+public class OccurenceOfAString {
+	static String given ="India is my country";
+	static char toFind = 'i';
+	public void usingIteration() {
+		int occurence=0;
+		given=given.toLowerCase(); 
+		char[] charArray = given.toCharArray();
+		toFind=Character.toLowerCase(toFind);
+		given=given.toLowerCase();
+
+	
+		for (int i = 0; i < charArray.length; i++) {
+			if (toFind==charArray[i]) {
+				occurence++;
+				
+			}
+			
+		}
+		System.out.println(occurence);
+	}
+	public void withoutIteration() {
+		
+		/*convert the input to a uniform format
+		find the length of the actual input
+		replace the to find char with empty string
+		find the length after replacing 
+		Occurrence = actual length-length after replacing   
+		*/
+			String stringFind = Character.toString(toFind).toUpperCase();
+			given=	given.toUpperCase();
+			System.out.println(given);
+			int actLength=given.length();
+			
+			given=given.replace(stringFind,"");
+			System.out.println(given);
+			System.out.println(given);
+			int afterLength= given.length();
+			int	findingCharLength=actLength-afterLength;
+			System.out.println(findingCharLength);
+		
+			 
+	}
+	public static void main(String[] args) {
+		OccurenceOfAString os = new OccurenceOfAString();
+		os.usingIteration();
+		os.withoutIteration();
+	}
+	
+
+}
