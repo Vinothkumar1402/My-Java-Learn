@@ -1,0 +1,26 @@
+package interviewProg;
+
+public class ReplaceVowel {
+	String given = "my name is VINOTH";
+	char replaceChar='*';
+	public void byIteration() {
+		char[] charArray = given.toCharArray();
+		for(int i=0;i<charArray.length;i++){
+			
+			if(charArray[i]=='a'||charArray[i]=='e'||charArray[i]=='i'||charArray[i]=='o'||charArray[i]=='u'||
+			   charArray[i]=='A'||charArray[i]=='E'||charArray[i]=='I'||charArray[i]=='O'||charArray[i]=='U'	){
+				charArray[i]='*';
+				
+			}
+			
+		}
+		System.out.println(charArray);
+		
+		
+	}
+	public static void main(String[] args) {
+		ReplaceVowel rv= new ReplaceVowel();
+		rv.byIteration();
+	}
+
+}
