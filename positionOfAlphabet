@@ -1,0 +1,18 @@
+package interviewProg;
+
+import java.util.Scanner;
+
+public class PositionOfAlphabet {
+	public static void main(String[] args) {
+		//we find by ASCII VALUE
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a character to find a position");
+		char given=	scanner.next().charAt(0);
+		given= Character.toLowerCase(given);
+		int asciiValue = (int) given ;
+		asciiValue=asciiValue-96;    //lower case --> -96  ,  Upper case--> -64 
+		System.out.println(asciiValue);
+		
+	}
+
+}
