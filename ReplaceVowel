@@ -15,12 +15,21 @@ public class ReplaceVowel {
 			
 		}
 		System.out.println(charArray);
+		}
+	
+	
+	public void RegularExpression() {
+		given=	given.replaceAll("[aeiouAEIOU]", "\\$"); //if & comes put \\&
+		System.out.println(given);
 		
-		
+
 	}
+	
+	
 	public static void main(String[] args) {
 		ReplaceVowel rv= new ReplaceVowel();
 		rv.byIteration();
+		rv.RegularExpression();
 	}
 
 }
