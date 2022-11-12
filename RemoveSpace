@@ -1,0 +1,33 @@
+	package interviewProg;
+	
+	public class RemoveSpace {
+		String given=" selenium with JAVA ";
+		public void byTrimMethod() {
+			 
+			System.out.println(given.trim());
+		}
+		
+		/*if we using java 11
+			1.strip()
+			2.stripLeading()
+			3.stripTrailing*/
+		public void UsingRegax() {
+	
+			/*
+			 * 
+			 * 	    ^[ \t]+|[ \t]+$ -->leading and trailing
+					^[ \t]+  -->leading
+					 [ \t]+$  -->trailing
+			 */	
+			
+			given=given.replaceAll("^[ \t]+|[ \t]+$", "");
+			System.out.println(given);
+			
+			}
+		
+	public static void main(String[] args) {
+		RemoveSpace rs=new RemoveSpace();
+		rs.byTrimMethod();
+		rs.UsingRegax();
+	}
+	}
