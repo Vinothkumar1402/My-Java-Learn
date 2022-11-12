@@ -1,0 +1,43 @@
+package interviewProg;
+
+public class NoOfVowelsInName {
+	 String name ="A.vinoth kumar";
+	 String vowels="aeiou";
+	public void SingleIteration() {
+		int noOfVowel=0;
+	name=name.toLowerCase();
+	char[] charArray=name.toCharArray();
+	for(int i=0;i<charArray.length;i++){
+		if(charArray[i]=='a'||charArray[i]=='e'||charArray[i]=='i'||charArray[i]=='o'||charArray[i]=='u'){
+			noOfVowel++;
+		}
+	  }
+	System.out.println(noOfVowel);
+	
+	
+	}
+	public void DoubleIteration() {
+		int noOfVowel=0;
+
+		name=name.toLowerCase();
+		char[] charArrayName=name.toCharArray();
+		char[] charArrayvowels= vowels.toCharArray();
+		for (int i = 0; i < charArrayName.length; i++) {
+			for (int j = 0; j < charArrayvowels.length; j++) {
+				if (charArrayName[i]==charArrayvowels[j]) {
+					noOfVowel++;
+					
+				}
+				
+			}
+		}
+		System.out.println(noOfVowel);
+		
+	}
+public static void main(String[] args) {
+	NoOfVowelsInName inName = new NoOfVowelsInName();
+	inName.SingleIteration();
+	inName.DoubleIteration();
+	
+}
+}
