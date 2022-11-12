@@ -1,0 +1,23 @@
+package interviewProg;
+
+public class AddNumInString {
+	public static void main(String[] args) {
+		String mail="vinothkumar98640@gmail.com";
+		String numbers="123456789";
+		int add=0;
+		char[] charArrayMail = mail.toCharArray();
+		char[] charArrayNumbers = numbers.toCharArray();
+		for (int i = 0; i <charArrayMail.length; i++) {
+				for (int j = 0; j <charArrayNumbers.length; j++) {
+				if (charArrayMail[i]==charArrayNumbers[j]) {
+					int value = charArrayMail[i]-48;
+					add=add+value;
+					
+					} 
+				}
+			}
+		
+		System.out.println(add);			
+	}
+
+}
