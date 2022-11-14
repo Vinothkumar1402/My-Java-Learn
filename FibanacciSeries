@@ -1,0 +1,22 @@
+package interviewProg;
+
+public class FibanacciSeries {
+	public static void main (String[] args){
+		int firstTerm=0;
+		int secondTerm=1;
+		int nextTerm;
+		int count=20;
+		for (int i = 1; i <=count; i++) {
+			System.out.print(firstTerm+" ");  //0
+			nextTerm=firstTerm+secondTerm;    //1
+			firstTerm=secondTerm; 			  //1
+			secondTerm=nextTerm;			  //1	
+			
+			
+		}
+	
+			
+		
+	}
+
+}
