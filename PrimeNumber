@@ -1,0 +1,31 @@
+package interviewProg;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+		System.out.print("Enter a number to find prime or not");
+		int num =scanner.nextInt();
+		int i=2;
+		boolean prime=true;
+		while(num>i){
+			if (num%i==0) {
+				System.out.println(num+" is not a prime number");
+				prime=false;
+				break;
+			}
+			i++;
+		}
+		if (prime==true) {
+			System.out.println(num+" is a prime number");
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+}
