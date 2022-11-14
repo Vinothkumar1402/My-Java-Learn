@@ -1,0 +1,29 @@
+package interviewProg;
+
+public class PalindromeOfInt {
+
+	public static void main(String[] args) {
+		int given=1001;
+		int numIs = given;
+		int rev=0;
+		while(numIs!=0) {
+			rev=rev*10;
+			//System.out.println("rev=rev*10;   "+rev);
+			rev=numIs%10+rev;
+			//System.out.println("rev=given%10+rev;  "+rev);
+			numIs=numIs/10;
+			//System.out.println("given=given/10;   "  +given);
+			//System.out.println(" ");
+		
+		}
+		if (given==rev) {
+			System.out.println(given+" is palindrome");			
+		}
+		else {
+			System.out.println(given+" is not a palindrome"); 
+		}
+		
+
+	}
+
+}
