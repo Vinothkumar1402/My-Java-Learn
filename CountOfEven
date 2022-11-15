@@ -1,0 +1,18 @@
+package interviewProg;
+
+public class CountOfEven {
+	public static void main(String[] args) {
+		int start=156;
+		int end=1000;
+		int count=0;
+		for (int i = start; i <=end; i++) {
+			if(i%2==0) {
+				count++;
+				
+			}
+			
+		}
+		System.out.println(count); 
+	}
+
+}
