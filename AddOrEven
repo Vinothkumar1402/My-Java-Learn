@@ -1,0 +1,15 @@
+package interviewProg;
+
+public class AddOrEven {
+	public static void main(String[] args) {
+		int given = 24;
+		if (given%2==0) {
+			System.out.println(given+" is even number");
+			
+		}
+		else {
+			System.out.println(given+" is odd number" );
+		}
+	}
+
+}
