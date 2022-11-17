@@ -1,0 +1,40 @@
+package interviewProg;
+
+import java.util.Scanner;
+
+public class AmstrongNum {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a number"); 
+		int user=scanner.nextInt();
+		scanner.close();
+		
+		
+		int forCount = user;
+		int forPow = user;
+		int digit,amst=0,count=0;
+		while(forCount!=0){
+			forCount=forCount/10;
+			count++;
+			}
+
+		
+		while(forPow>0) {
+		   digit=forPow%10;
+		   double power = Math.pow(digit, count);
+		   forPow=forPow/10;
+		   amst=(int)(amst+power);
+	
+		   }
+		
+		if (user==amst) {
+			System.out.println(user+" is amstrong nmber");
+		}
+		else {
+			System.out.println(user+" is not a amstrong nmber");
+		} 
+		
+	
+	}
+
+}
